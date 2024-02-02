@@ -1,4 +1,4 @@
-This repo has total 5 branches with 5 other different features that represents core of IaC with AWS using Terraform - 
+This repo has total 5 branches with 5 different concepts that represents core of IaC with AWS using Terraform - 
 
 1. Main - Simple code to Configure AWS provider resources like : VPCs, Subnets, routables and security groups etc
 2. Feature 1 - Running full AWS EC2 instance with Docker contain on which nginx app is deployed - through Infrastructure as Code using Terraform
