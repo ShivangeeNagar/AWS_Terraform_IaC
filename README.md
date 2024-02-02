@@ -1,93 +1,35 @@
-# TereraformAWS
+This repo has total 5 branches with 5 other different features that represents core of IaC with AWS using Terraform - 
+
+1. Main - Simple code to Configure AWS provider resources like : VPCs, Subnets, routables and security groups etc
+2. Feature 1 - Running full AWS EC2 instance with Docker contain on which nginx app is deployed - through Infrastructure as Code using Terraform
+3. feature/provisioners - Using provisioners like remote_exec, local_exec and file and runnung the entry-script.sh to deploy webapp on docker container on EC2
+4. feature/modules - Modularised the whole code and branched them into webservers and subnet modules - making the coder readable and re-usable
+5. feature/S3Bucket - Stored and shared the remote TF state on AWS S3 bucket as a terraform industry best practice
+
+Snapshots : 
+
+<img width="1109" alt="Screenshot 2024-02-02 at 12 46 25 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/c3922238-1caf-48fe-94a3-b8d247631ced">
+
+<img width="1128" alt="Screenshot 2024-02-02 at 12 46 14 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/a108abb1-b284-4a40-92ef-fcec56d1b142">
+
+<img width="1136" alt="Screenshot 2024-02-02 at 12 45 59 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/eaac4322-68aa-480b-a122-48b79b2d91fb">
+
+<img width="1137" alt="Screenshot 2024-02-02 at 12 45 45 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/7fc03d48-2986-4100-903f-8d7f4e27518c">
+
+<img width="1163" alt="Screenshot 2024-02-02 at 12 45 33 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/d5759b7b-c6fc-4c6a-bfe9-e4801d5012d1">
+
+<img width="1191" alt="Screenshot 2024-02-02 at 12 44 53 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/f52de21f-aa2d-4e9b-b0e5-689576da77a8">
+
+<img width="1198" alt="Screenshot 2024-02-02 at 12 44 43 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/ec42b123-a097-4d5e-b495-910f3a1575df">
+
+<img width="1133" alt="Screenshot 2024-02-02 at 12 44 26 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/c5704ffa-7460-4780-bb63-a787f31a632d">
+
+<img width="1439" alt="Screenshot 2024-02-02 at 12 44 15 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/a92779f9-f448-4669-a5d0-5463966f33b8">
 
 
 
-## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-## Add your files
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/terraform9754005/TereraformAWS.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/terraform9754005/TereraformAWS/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
