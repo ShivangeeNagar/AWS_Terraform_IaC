@@ -6,6 +6,11 @@ This repo has total 5 branches with 5 different concepts that represents core of
 4. feature/modules - Modularised the whole code and branched them into webservers and subnet modules - making the coder readable and re-usable
 5. feature/S3Bucket - Stored and shared the remote TF state on AWS S3 bucket as a terraform industry best practice
 
+Project Structure - 
+
+<img width="1387" alt="Screenshot 2024-02-02 at 1 16 19 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_IaC/assets/90488975/6052d1db-4ce8-4ad1-bbaf-a1ace606d1f6">
+
+
 Snapshots : 
 
 <img width="1109" alt="Screenshot 2024-02-02 at 12 46 25 AM" src="https://github.com/ShivangeeNagar/AWS_Terraform_Iac/assets/90488975/c3922238-1caf-48fe-94a3-b8d247631ced">
