@@ -1,7 +1,7 @@
 This repo has total 5 branches with 5 different concepts that represents core of IaC with AWS using Terraform - 
 
-1. Main - Simple code to Configure AWS provider resources like : VPCs, Subnets, routables and security groups etc
-2. Feature 1 - Running full AWS EC2 instance with Docker contain on which nginx app is deployed - through Infrastructure as Code using Terraform
+1. Main - Simple code to Configure AWS provider resources like : VPCs, Subnets, route tables and security groups etc
+2. Feature 1 - Running full AWS EC2 instance with Docker container on which nginx app is deployed - through Infrastructure as Code using Terraform
 3. feature/provisioners - Using provisioners like remote_exec, local_exec and file and running the entry-script.sh to deploy webapp on docker container on EC2
 4. feature/modules - Modularised the whole code and branched them into webservers and subnet modules - making the coder readable and re-usable
 5. feature/S3Bucket - Stored and shared the remote TF state on AWS S3 bucket as a terraform industry best practice
